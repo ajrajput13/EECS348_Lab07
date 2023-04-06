@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EECS 348 Lab 7: Practice 4</title>
+        <h1>Practice 4: Multiplication Table</h1>
+        <style>
+            body {
+                background-color: #F8CA9B; 
+            }
+        </style>
+    </head>
+<body>
+    <form method="get" action="multiplicationTable.php">
+        <label for="number">Enter your table size:</label>
+        <input type="number" name="number" id="number" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <?php
+        if (isset($_GET["number"])) {
+            include("multiplicationTable.php");
+        }
+    ?>
+</body>
+</html>
